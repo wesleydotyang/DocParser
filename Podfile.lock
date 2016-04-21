@@ -1,0 +1,10 @@
+PODS:
+  - Zip (0.3.4)
+
+DEPENDENCIES:
+  - Zip (~> 0.3)
+
+SPEC CHECKSUMS:
+  Zip: 99d6f8bdcbcf1fd2f189af929651282bdc42c2f7
+
+COCOAPODS: 0.39.0
