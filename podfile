@@ -3,3 +3,5 @@ use_frameworks!
 
 source 'https://github.com/CocoaPods/Specs.git'
 pod 'Zip', '~> 0.3'
+pod 'SWXMLHash', '~> 2.3.0'
+

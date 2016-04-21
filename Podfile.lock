@@ -1,10 +1,13 @@
 PODS:
+  - SWXMLHash (2.3.1)
   - Zip (0.3.4)
 
 DEPENDENCIES:
+  - SWXMLHash (~> 2.3.0)
   - Zip (~> 0.3)
 
 SPEC CHECKSUMS:
+  SWXMLHash: 795c66e74f4cc9473ad6465c6653c5a6f59f417e
   Zip: 99d6f8bdcbcf1fd2f189af929651282bdc42c2f7
 
 COCOAPODS: 0.39.0

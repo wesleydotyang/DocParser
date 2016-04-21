@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Zip
 import Foundation
 
 class ViewController: UIViewController {
@@ -16,13 +15,14 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        let parser = DocParser()
         do{
         
 //            let documentPath = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory,NSSearchPathDomainMask.UserDomainMask, true)
             if let filePath = NSBundle.mainBundle().URLForResource("Fable", withExtension: "docx") {
-                
-                let unzipDirectory = try Zip.quickUnzipFile(filePath)
-                print(unzipDirectory)
+                let resultString = try parser.parseFile(filePath)
+                let textView = self.view.viewWithTag(1) as! UITextView
+                textView.attributedText = resultString
             }
             
         }catch{
